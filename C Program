@@ -1,0 +1,263 @@
+
+C Program
+
+#include <stdio.io>
+
+int main(void)
+
+{
+
+	print("Hello World");
+
+}
+
+
+Source Code - > (  Compiler  ) < - Machine Code
+
+Compiler : A compiler is a program designed to convert source code to machine code.
+
+
+>> make hello
+
+>> ./hello
+
+ans. where my folder is.
+
+Function is a mini program it's an action or verb that you can use when writing your own program that does something.
+
+Functions are just a programmed version of an algorithm, the implementation of an algorithm in software.
+
+What is Library ?
+
+A library is code that someone else has written.
+
+String :
+
+String is text but get_string is function.
+
+answer = get_string("What is your name");
+
+-------------
+arguments - > Functions - > return value
+-------------
+
+
+printf ("hello, %s", answer);
+
+
+printf: Print - formate code.
+
+%s : Plug in some actual value here. placeholder for string.
+
+There's actually two commas here.
+
+: First Comma is English Grammatical comma. That has nothing to do with programming. That just has everything to do with english.
+
+: Second Comma it separates first argument from second argument.
+
+------------------------
+
+#include <conio.h>
+#inclue <stdio.h>
+
+int main(void)
+
+{
+
+  string answer = get_string("what's your name? ");
+  printf ("Hello, %s\n", answer);
+
+}
+
+In this terminal $-sign is just a constant visual reminder of where my prompt is, where I can type more commands.
+
+\n : new line
+ 
+header files: <stdio.h> , <conio.h>
+
+<stdio.h> which stands for standard input output dot h. is very popular file in use C - Program that gives you the ability to get input and output from user.
+
+style50 : style50_hello.c
+check50 : Correctness of your code.
+
+-----------------------------
+check50 cs50/problems/hello 
+-----------------------------
+
+.. parent directory
+. current directory	./hello
+
+===================
+
+Data Types
+
+whole bunch of data :
+
+Data Types:
+
+bool , char , double , float , int , main , long , string
+
+Functions :
+
+get_char
+get_double
+get_float
+get_int
+get_long
+get_string
+
+
+Placeholder in C:
+
+%c : printing a single character : char
+
+%f : printing a floating point value : float
+
+%i : printing a integer value : integer
+
+%li : printing a long integer : long : 64 bits
+
+%s : printing a string value : string : 32 bits
+
+===========================================
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+
+{
+  int x = get_int("x: ");
+
+  int y = get_int("y: ");
+
+  printf("%i\n", x + y);
+
+}
+
+====================================
+
+Type Casting:
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+
+{
+  int x = get_int("x: ");
+  int y = get_int("y: ");
+
+  float z = (float) x / (float) y;
+  printf("%f\n", z);
+
+} 
+
+You can TypeCaste one data type to another by literally in parentheses just putting the new data type that you want. 
+
+===================================
+
+Conditions:
+
+A condition was like a fork in the road that could allow you do this thing, this other thing, or something else altogether.
+
+NOTE : One equal sign is assignment from right to left, Two equal signs is equality comparisons.
+
+
+if (x < y)
+{
+  printf ("x is less than y\n");
+}
+
+else if (x > y)
+{
+  printf ("x is greater than y\n");
+}
+
+else 
+{
+  printf ("x is equal to y\n");
+}
+
+
+In C - Language Format :
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+
+{
+
+  //prompt user for x
+  int x = get_int ("x: ");
+
+  //prompt user for y
+  int y = get_int ("y: ");
+
+  //compare x and y
+  if (x < y)
+  {
+	printf ("x is less than y\n");
+  }
+
+  else if (x > y)
+  {
+	print ("x is greater than y\n");
+  }
+
+  else
+  {
+	print ("x is equal to y\n")
+  }
+
+}
+
+
+In C program that is adding conditions, which is actually then allowing me to make decisions and print out one thing potentally or the other.
+
+==========================================
+
+Short Program : 
+
+Agree
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+
+{
+  char c = get_char("Do you agree? ");
+  if (c == 'y')
+  {
+	printf("Agreed.\n");
+  }
+
+  else if (c == 'n')
+  {
+	printf("Not Agreed.\n");
+  }
+
+}
+
+Let just add a some Arguments in C using " Vertical Bar Operator " which is the Logical or operator. Say two questions at once.
+
+  if (c == 'y' || c == 'Y');
+  {
+	printf ("Agree. \n");
+  }
+
+  else if (c == 'n' || c == 'N');
+  {
+	printf ("Not Agreed. \n");
+  }
+
+=======================================
+
+
+
+
+
+
+
